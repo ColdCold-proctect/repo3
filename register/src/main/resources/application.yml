@@ -1,0 +1,22 @@
+logging:
+  level:
+    root: info
+  #定义自己包下的日志等级
+  com.blog.mh.mhblog: debug
+  #指定日志生成的位置
+  file:
+    name: log/blog.log
+
+#数据库连接
+spring:
+  datasource:
+    username: root
+    url: jdbc:mysql://127.0.0.1:3306/springboot?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&useSSL=false
+    password: w23456789
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+#整合Mybatis
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  #配置别名的包路径
+  type-aliases-package: com.spring.register.pojo

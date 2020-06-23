@@ -1,0 +1,69 @@
+2020-06-09 20:44:13.614  INFO 1764 --- [restartedMain] com.spring.register.RegisterApplication  : Starting RegisterApplication on DESKTOP-9A82CKN with PID 1764 (E:\GIT\register\target\classes started by MH in E:\GIT\register)
+2020-06-09 20:44:13.632  INFO 1764 --- [restartedMain] com.spring.register.RegisterApplication  : No active profile set, falling back to default profiles: default
+2020-06-09 20:44:13.717  INFO 1764 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-06-09 20:44:13.718  INFO 1764 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-06-09 20:44:16.950  INFO 1764 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-09 20:44:16.967  INFO 1764 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-09 20:44:16.967  INFO 1764 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-06-09 20:44:17.139  INFO 1764 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-09 20:44:17.140  INFO 1764 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3421 ms
+2020-06-09 20:44:18.598  INFO 1764 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-06-09 20:44:18.722  INFO 1764 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-06-09 20:44:19.232  INFO 1764 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-06-09 20:44:19.261  INFO 1764 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-06-09 20:44:19.293  INFO 1764 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-06-09 20:44:19.674  INFO 1764 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-09 20:44:19.678  INFO 1764 --- [restartedMain] com.spring.register.RegisterApplication  : Started RegisterApplication in 7.478 seconds (JVM running for 9.812)
+2020-06-09 20:48:30.529  INFO 1764 --- [http-nio-8080-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-09 20:48:30.529  INFO 1764 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-09 20:48:30.549  INFO 1764 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
+2020-06-09 20:48:30.615  WARN 1764 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'username' is not present]
+2020-06-09 20:48:32.952  WARN 1764 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'username' is not present]
+2020-06-09 20:49:30.207  WARN 1764 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'username' is not present]
+2020-06-09 20:51:17.759  WARN 1764 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'username' is not present]
+2020-06-09 20:51:19.344  WARN 1764 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'username' is not present]
+2020-06-09 20:51:19.480  WARN 1764 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'username' is not present]
+2020-06-09 20:51:19.646  WARN 1764 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'username' is not present]
+2020-06-09 20:55:52.322  INFO 7672 --- [restartedMain] com.spring.register.RegisterApplication  : Starting RegisterApplication on DESKTOP-9A82CKN with PID 7672 (E:\GIT\register\target\classes started by MH in E:\GIT\register)
+2020-06-09 20:55:52.327  INFO 7672 --- [restartedMain] com.spring.register.RegisterApplication  : No active profile set, falling back to default profiles: default
+2020-06-09 20:55:52.460  INFO 7672 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-06-09 20:55:52.460  INFO 7672 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-06-09 20:55:55.818  INFO 7672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-09 20:55:55.832  INFO 7672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-09 20:55:55.832  INFO 7672 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-06-09 20:55:55.972  INFO 7672 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-09 20:55:55.973  INFO 7672 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3512 ms
+2020-06-09 20:55:57.280  INFO 7672 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-06-09 20:55:57.395  INFO 7672 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-06-09 20:55:57.966  INFO 7672 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-06-09 20:55:57.990  INFO 7672 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-06-09 20:55:58.022  INFO 7672 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-06-09 20:55:58.266  INFO 7672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-09 20:55:58.270  INFO 7672 --- [restartedMain] com.spring.register.RegisterApplication  : Started RegisterApplication in 6.854 seconds (JVM running for 7.697)
+2020-06-09 20:56:11.646  INFO 7672 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-09 20:56:11.646  INFO 7672 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-09 20:56:11.667  INFO 7672 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
+2020-06-09 20:56:11.719  WARN 7672 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'userName' is not present]
+2020-06-09 20:57:14.034  INFO 14384 --- [restartedMain] com.spring.register.RegisterApplication  : Starting RegisterApplication on DESKTOP-9A82CKN with PID 14384 (E:\GIT\register\target\classes started by MH in E:\GIT\register)
+2020-06-09 20:57:14.040  INFO 14384 --- [restartedMain] com.spring.register.RegisterApplication  : No active profile set, falling back to default profiles: default
+2020-06-09 20:57:14.127  INFO 14384 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-06-09 20:57:14.127  INFO 14384 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-06-09 20:57:18.684  INFO 14384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-09 20:57:18.709  INFO 14384 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-09 20:57:18.710  INFO 14384 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-06-09 20:57:18.858  INFO 14384 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-09 20:57:18.859  INFO 14384 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4732 ms
+2020-06-09 20:57:20.319  INFO 14384 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-06-09 20:57:20.438  INFO 14384 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-06-09 20:57:21.017  INFO 14384 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-06-09 20:57:21.051  INFO 14384 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-06-09 20:57:21.091  INFO 14384 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-06-09 20:57:21.320  INFO 14384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-09 20:57:21.324  INFO 14384 --- [restartedMain] com.spring.register.RegisterApplication  : Started RegisterApplication in 8.335 seconds (JVM running for 9.162)
+2020-06-09 20:58:31.394  INFO 14384 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-09 20:58:31.395  INFO 14384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-09 20:58:31.420  INFO 14384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 25 ms
+2020-06-09 20:58:31.535  INFO 14384 --- [http-nio-8080-exec-1] com.spring.register.aspect.LogAspect     : Request:{url='http://localhost:8080/login', ip='0:0:0:0:0:0:0:1', classMethod='com.spring.register.controller.LoginController.login', args=[1, 1]}
+2020-06-09 20:58:31.634  INFO 14384 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-09 20:58:31.930  INFO 14384 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-09 20:58:32.007  INFO 14384 --- [http-nio-8080-exec-1] com.spring.register.aspect.LogAspect     : result:true

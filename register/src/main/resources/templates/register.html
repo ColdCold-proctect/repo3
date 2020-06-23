@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            background: url("../static/images/bg.jpg");
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .myTable td button {
+            background-color: rgba(	147,112,219,.8);
+            border: none;
+            color: white;
+            padding: 5px 20px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        td{
+           padding: 6px;
+        }
+        .inputStyle {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid white;
+        }
+        textarea{
+            width: 200px;
+            height: 50px;
+        }
+        #msg {
+            color: red;
+        }
+        #register{
+            padding: 40px;
+            width: 300px;
+            margin:0 auto;
+            transform: translateY(10%);
+            background: rgba(122,122,122,.8);
+            border-radius: 10px;
+            color: white;
+        }
+        #register h3{
+           text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+<div id="register">
+    <form action="#" th:action="@{/register}" id="myForm" method="post">
+        <h3>注册信息表</h3>
+        <h4 id="msg"></h4>
+        <table class="myTable">
+            <tr>
+                <td><label>用户名：</label></td>
+                <td><input id="username" type="text" class="inputStyle" name="username"></td>
+            </tr>
+            <tr>
+                <td><label>密码：</label></td>
+                <td><input id="password" type="password" class="inputStyle" name="password"></td>
+            </tr>
+            <tr>
+                <td><label>密码确认: </label></td>
+                <td><input id="checkPassword" type="password" class="inputStyle"></td>
+            </tr>
+            <tr>
+                <td><label>电子邮件:</label></td>
+                <td><input id="email" type="email" class="inputStyle" name="email"></td>
+            </tr>
+            <tr>
+                <td><label>生日:</label></td>
+                <td><input id="birthday" type="date" class="inputStyle" name="birthday"></td>
+            </tr>
+            <tr>
+                <td><label>性别:</label></td>
+                <td><input type="radio" name="sex" value="1" checked>男<input type="radio" name="sex" value="0">女
+                </td>
+            </tr>
+            <tr>
+                <td><label>年级:</label></td>
+                <td><select name="grade">
+                    <option>大一</option>
+                    <option>大二</option>
+                    <option selected>大三</option>
+                    <option>大四</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label>兴趣</label></td>
+                <td><input type="checkbox" name="interest" value="movie">电影 <input type="checkbox" name="interest"
+                                                                                   value="song">唱歌 <input
+                        type="checkbox" name="interest" value="read"> 读书
+                </td>
+            </tr>
+            <tr>
+                <td><label>自我介绍：</label></td>
+                <td><textarea id="description" name="description"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit">提交form数据</button>
+                    <button id="save" type="button">提交json数据</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        //用来存放提示信息
+        var msg = document.getElementById("msg");
+        //两次输入密码必须一致
+        var checkPassword = document.getElementById("checkPassword");
+        checkPassword.onchange = function () {
+            var str;
+            var psw = password.value;
+            var cpsw = checkPassword.value;
+            if (psw != cpsw) {
+                str = "<span>两次密码不一致!</span>";
+            }
+            if (psw == cpsw) {
+                str = "";
+            }
+            msg.innerHTML = str;
+        }
+
+        var save = document.getElementById("save");
+        save.onclick = function () {
+            alert("发送Json");
+            var formObject = {};
+            var formArray =$("#myForm").serializeArray();
+            $.each(formArray,function(i,item){
+                formObject[item.name] = item.value;
+            });
+            //发送请求
+            $.post({
+                url: "/register2",
+                data: JSON.stringify(formObject),
+                dataType:'json',
+                contentType:'application/json;charset=UTF-8',
+                success: function (data) {
+                    alert("注册成功");
+                },
+                error: function (error) {
+                    alert("注册失败");
+                }
+            });
+        };
+
+    </script>
+    <script src="js/jquery-3.4.1.min.js" th:src="@{js/jquery-3.4.1.min.js}"></script>
+</div>
+</body>
+
+</html>
